@@ -55,13 +55,13 @@ public class Resume {
         String exStr = "";
         String skStr = "";
 
-        for (Education s : edList){
+        for (Education s : getEdList()){
             edStr += s.toString() + "\n\n";
         }
-        for(Experience s : exList){
+        for(Experience s : getExList()){
             exStr += s.toString() + "\n\n";
         }
-        for(Skill s: skList){
+        for(Skill s: getSkList()){
             skStr += s.toString() + "\n";
         }
 

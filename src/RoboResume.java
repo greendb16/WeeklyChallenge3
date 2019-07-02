@@ -13,6 +13,7 @@ public class RoboResume {
     private static Resume e = new Resume();
     private static ArrayList<Resume> resList = new ArrayList<>();
     private static boolean redo;
+    private static boolean play = true;
 
     private static boolean[] education = {false, false, false, false, false, false, false, false, false, false};
     private static boolean[] resume = {false, false, false, false,false};
@@ -21,16 +22,18 @@ public class RoboResume {
     private static boolean[] skills = {false, false, false, false, false, false, false,false,false,false};
 
     public static void main(String[] args) {
-        while (true) {
+        while (play) {
 
             if(resume[4]){
                 System.out.println("Sorry we cannot process anymore resumes, but you are free to Browse or Edit.");
             }
             else{
-            System.out.println("Welcome to RoboResume!  Would you like to Create, Edit, or Browse resumes?");}
+            System.out.println("Welcome to RoboResume!  Would you like to Create, Edit, or Browse resumes?\tOr, enter (Q) to quit the program.");}
             input = scan.nextLine().toLowerCase();
 
-
+            if(input.equals("q")){
+                break;
+            }
             if (input.equals("create") && !resume[4]) {
 
                 redo = true;
@@ -71,7 +74,6 @@ public class RoboResume {
                             second.setDetails(two);
                             info[1] = true;
                             infoTest = true;
-
                         }
 
                         while (info[0] && info[1] && !info[2] && resume[0] && resume[1]) {
@@ -382,6 +384,68 @@ public class RoboResume {
                             education[7] = true;
                             redo = false;
                         }
+                        while (education[0] && education[1] && education[2] && education[3] && education[4] && education[5] && education[6] && education[7] && !education[8] && redo) {
+                            Education nueve = new Education();
+                            System.out.println("Please Enter the school you attended:");
+                            nueve.setSchool(scan.nextLine());
+
+                            System.out.println("Please enter the Year you graduated:");
+                            nueve.setYear(scan.nextInt());
+                            scan.nextLine();
+
+                            System.out.println("Please enter the type of degree you earned (Bachelors, Masters, etc.):");
+                            nueve.setDegree(scan.nextLine());
+
+                            System.out.println("Please enter the Major you got your degree in:");
+                            nueve.setMajor(scan.nextLine());
+
+
+                            if (!resume[0]) {
+                                first.setEdList(nueve);
+                            } else if (!resume[1]) {
+                                second.setEdList(nueve);
+                            } else if (!resume[2]) {
+                                third.setEdList(nueve);
+                            } else if(!resume[3]){
+                                fourth.setEdList(nueve);
+                            } else if(!resume[4]){
+                                fifth.setEdList(nueve);
+                            }
+
+                            education[8] = true;
+                            redo = false;
+                        }
+                        while (education[0] && education[1] && education[2] && education[3] && education[4] && education[5] && education[6] && education[7] && education[8] && !education[9] && redo) {
+                            Education diez = new Education();
+                            System.out.println("Please Enter the school you attended:");
+                            diez.setSchool(scan.nextLine());
+
+                            System.out.println("Please enter the Year you graduated:");
+                            diez.setYear(scan.nextInt());
+                            scan.nextLine();
+
+                            System.out.println("Please enter the type of degree you earned (Bachelors, Masters, etc.):");
+                            diez.setDegree(scan.nextLine());
+
+                            System.out.println("Please enter the Major you got your degree in:");
+                            diez.setMajor(scan.nextLine());
+
+
+                            if (!resume[0]) {
+                                first.setEdList(diez);
+                            } else if (!resume[1]) {
+                                second.setEdList(diez);
+                            } else if (!resume[2]) {
+                                third.setEdList(diez);
+                            } else if(!resume[3]){
+                                fourth.setEdList(diez);
+                            } else if(!resume[4]){
+                                fifth.setEdList(diez);
+                            }
+
+                            education[8] = true;
+                            redo = false;
+                        }
 
 
                         System.out.println("Would you like to add more education? (Y/N)");
@@ -630,6 +694,62 @@ public class RoboResume {
                             exp[7] = true;
                             redo = false;
                         }
+                        while (exp[0] && exp[1] && exp[2] && exp[3] && exp[4] && exp[5] && exp[6] && exp[7] && !exp[8] && redo) {
+                            Experience que = new Experience();
+                            System.out.println("Please Enter the company you worked for:");
+                            que.setCompany(scan.nextLine());
+
+                            System.out.println("Please enter your Title at the company:");
+                            que.setTitle(scan.nextLine());
+
+                            System.out.println("Please enter your time at the company (mm/yy to mm/yy)");
+                            que.setDate(scan.nextLine());
+
+                            System.out.println("Please enter a description of your position:");
+                            que.setDescription(scan.nextLine());
+
+                            if (!resume[0]) {
+                                first.setExList(que);
+                            } else if (!resume[1]) {
+                                second.setExList(que);
+                            } else if(!resume[2]){
+                                third.setExList(que);
+                            }else if (!resume[3]){
+                                fourth.setExList(que);
+                            }else if (!resume[4]){
+                                fifth.setExList(que);
+                            }
+                            exp[8] = true;
+                            redo = false;
+                        }
+                        while (exp[0] && exp[1] && exp[2] && exp[3] && exp[4] && exp[5] && exp[6] && exp[7] && exp[8] && !exp[9]  && redo) {
+                            Experience zyu = new Experience();
+                            System.out.println("Please Enter the company you worked for:");
+                            zyu.setCompany(scan.nextLine());
+
+                            System.out.println("Please enter your Title at the company:");
+                            zyu.setTitle(scan.nextLine());
+
+                            System.out.println("Please enter your time at the company (mm/yy to mm/yy)");
+                            zyu.setDate(scan.nextLine());
+
+                            System.out.println("Please enter a description of your position:");
+                            zyu.setDescription(scan.nextLine());
+
+                            if (!resume[0]) {
+                                first.setExList(zyu);
+                            } else if (!resume[1]) {
+                                second.setExList(zyu);
+                            } else if(!resume[2]){
+                                third.setExList(zyu);
+                            }else if (!resume[3]){
+                                fourth.setExList(zyu);
+                            }else if (!resume[4]){
+                                fifth.setExList(zyu);
+                            }
+                            exp[9] = true;
+                            redo = false;
+                        }
 
                         System.out.println("Would you like to add another work experience? (Y/N)");
                         input = scan.nextLine().toLowerCase();
@@ -825,6 +945,50 @@ public class RoboResume {
                             skills[7] = true;
                             redo = false;
                         }
+                        while (skills[0] && skills[1] && skills[2] && skills[3] && skills[4] && skills[5] && skills[6] && skills[7] && !skills[8] && redo) {
+                            Skill neun = new Skill();
+                            System.out.println("Please enter a skill you possess:");
+                            neun.setSkill(scan.nextLine());
+
+                            System.out.println("How would you rank your proficiency in that skill?\nFundamental, Novice, Intermediate, Advanced, or Expert");
+                            neun.setLevel(scan.nextLine());
+
+                            if (!resume[0]) {
+                                first.setSkList(neun);
+                            } else if (!resume[1]) {
+                                second.setSkList(neun);
+                            } else if (!resume[2]){
+                                third.setSkList(neun);
+                            } else if (!resume[3]){
+                                fourth.setSkList(neun);
+                            } else if (!resume[4]){
+                                fifth.setSkList(neun);
+                            }
+                            skills[8] = true;
+                            redo = false;
+                        }
+                        while (skills[0] && skills[1] && skills[2] && skills[3] && skills[4] && skills[5] && skills[6] && skills[7] && skills[8] && !skills[9] && redo) {
+                            Skill zehn = new Skill();
+                            System.out.println("Please enter a skill you possess:");
+                            zehn.setSkill(scan.nextLine());
+
+                            System.out.println("How would you rank your proficiency in that skill?\nFundamental, Novice, Intermediate, Advanced, or Expert");
+                            zehn.setLevel(scan.nextLine());
+
+                            if (!resume[0]) {
+                                first.setSkList(zehn);
+                            } else if (!resume[1]) {
+                                second.setSkList(zehn);
+                            } else if (!resume[2]){
+                                third.setSkList(zehn);
+                            } else if (!resume[3]){
+                                fourth.setSkList(zehn);
+                            } else if (!resume[4]){
+                                fifth.setSkList(zehn);
+                            }
+                            skills[9] = true;
+                            redo = false;
+                        }
                         System.out.println("Would you like to add another Skill? (Y/N)");
                         input = scan.nextLine();
                         if (input.equals("n")) {
@@ -860,9 +1024,13 @@ public class RoboResume {
                         System.out.println(first.toString());
                     }
 
-                    System.out.println("Would you like to return to the main menu?");
+                    System.out.println("Would you like to return to the main menu?(Y/N) or Enter (Q) to quit.");
                     input = scan.nextLine().toLowerCase();
                     if (!input.equals("n")) {
+                        break;
+                    }
+                    else if (input.equals("Q")){
+                        play = false;
                         break;
                     }
                 }
@@ -909,9 +1077,13 @@ public class RoboResume {
                             break;
                         }
                     }
-                    System.out.println("Would you like to edit another resume? (Y/N)");
+                    System.out.println("Would you like to edit another resume? (Y/N) Or enter (Q) to exit program.");
                     input = scan.nextLine().toLowerCase();
                     if (input.equals("n")) {
+                        break;
+                    }
+                    else if (input.equals("q")){
+                        play = false;
                         break;
                     }
                 }
@@ -930,7 +1102,7 @@ public class RoboResume {
                     }
                     else if(input.equals("skill")){
                         int m=0;
-                        System.out.println("what skill are you looking for?");
+                        System.out.println("What skill are you looking for?");
                         input = scan.nextLine();
                         for(Resume r:resList){
                             for(Skill s: r.getSkList()){
@@ -949,12 +1121,15 @@ public class RoboResume {
                         System.out.println("That is not an option please try again.");
                     }
 
-                    System.out.println("\n\n\nWould you like to browse something else? (Y/N)");
+                    System.out.println("\n\n\nWould you like to browse something else? (Y/N) Or enter (Q) to quit.");
                     input = scan.nextLine().toLowerCase();
                     if(input.equals("n")){
                         break;
                     }
-
+                    else if(input.equals("q")){
+                        play=false;
+                        break;
+                    }
                 }
             }
             else{
