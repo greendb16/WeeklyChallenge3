@@ -937,7 +937,7 @@ public class RoboResume {
                                 if(input.equals(s.getSkill())){
 
                                     m++;
-                                    System.out.println(r.toString());
+                                    System.out.println(r.getDetails().getName());
                                 }
                             }
                         }
