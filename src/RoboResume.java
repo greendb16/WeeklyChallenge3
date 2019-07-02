@@ -1106,7 +1106,7 @@ public class RoboResume {
                         input = scan.nextLine();
                         for(Resume r:resList){
                             for(Skill s: r.getSkList()){
-                                if(input.equals(s.getSkill())){
+                                if(input.equalsIgnoreCase(s.getSkill())){
 
                                     m++;
                                     System.out.println(r.getDetails().getName());
