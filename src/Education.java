@@ -51,7 +51,7 @@ public class Education {
 
     @Override
     public String toString(){
-        return "Education\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n" + getDegree() + " in " + getMajor() + ",\n" + getSchool() + ", " + getYear();
+        return  getDegree() + " in " + getMajor() + ",\n" + getSchool() + ", " + getYear();
     }
 
 

@@ -49,7 +49,7 @@ public class Experience {
 
     @Override
     public String toString(){
-        return "Experience\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n" + getCompany() + "\n" + getTitle() + "\n" + getDescription() + "\n" + getDate();
+        return getCompany() + "\n" + getTitle() + "\nDuties:  " + getDescription() + "\n" + getDate();
 
     }
 }
