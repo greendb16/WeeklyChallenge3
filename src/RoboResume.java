@@ -22,11 +22,17 @@ public class RoboResume {
 
     public static void main(String[] args) {
         while (true) {
-            System.out.println("Welcome to RoboResume!  Would you like to Create, Edit, or Browse resumes?");
+
+            if(resume[4]){
+                System.out.println("Sorry we cannot process anymore resumes, but you are free to Browse or Edit.");
+            }
+            else{
+            System.out.println("Welcome to RoboResume!  Would you like to Create, Edit, or Browse resumes?");}
             input = scan.nextLine().toLowerCase();
 
 
-            if (input.equals("create")) {
+            if (input.equals("create") && !resume[4]) {
+
                 redo = true;
                 while (true) {
                     System.out.println("\n\nLet's collect your personal information...\n");
@@ -121,7 +127,7 @@ public class RoboResume {
 
 
                     System.out.println("\n\nNext lets add Education...\n");
-
+                    redo = true;
                     boolean edTest = true;
                     while (edTest) {
                         if(redo){
@@ -382,8 +388,6 @@ public class RoboResume {
                         input = scan.nextLine().toLowerCase();
                         if (input.equals("n")) {
                             edTest = false;
-
-
                         }
                     }
 
@@ -723,8 +727,12 @@ public class RoboResume {
                                 first.setSkList(vier);
                             } else if (!resume[1]) {
                                 second.setSkList(vier);
-                            } else {
+                            } else if (!resume[2]){
                                 third.setSkList(vier);
+                            } else if (!resume[3]){
+                                fourth.setSkList(vier);
+                            } else if (!resume[4]){
+                                fifth.setSkList(vier);
                             }
                             skills[3] = true;
                             redo = false;
@@ -814,7 +822,7 @@ public class RoboResume {
                             } else if (!resume[4]){
                                 fifth.setSkList(acht);
                             }
-                            skills[6] = true;
+                            skills[7] = true;
                             redo = false;
                         }
                         System.out.println("Would you like to add another Skill? (Y/N)");
@@ -920,7 +928,7 @@ public class RoboResume {
                         }
 
                     }
-                    if(input.equals("skill")){
+                    else if(input.equals("skill")){
                         int m=0;
                         System.out.println("what skill are you looking for?");
                         input = scan.nextLine();
@@ -949,6 +957,8 @@ public class RoboResume {
 
                 }
             }
+            else{
+                System.out.println("That is not an option please try again.");}
         }
     }
 }

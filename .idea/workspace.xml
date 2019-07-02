@@ -6,14 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54b4ef48-3409-443e-a25c-90eaec19a696" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/RoboResume/Education.class" afterPath="$PROJECT_DIR$/out/production/RoboResume/Education.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/RoboResume/Experience.class" afterPath="$PROJECT_DIR$/out/production/RoboResume/Experience.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/RoboResume/Resume.class" afterPath="$PROJECT_DIR$/out/production/RoboResume/Resume.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/RoboResume/RoboResume.class" afterPath="$PROJECT_DIR$/out/production/RoboResume/RoboResume.class" />
-      <change beforePath="$PROJECT_DIR$/src/Education.java" afterPath="$PROJECT_DIR$/src/Education.java" />
-      <change beforePath="$PROJECT_DIR$/src/Experience.java" afterPath="$PROJECT_DIR$/src/Experience.java" />
-      <change beforePath="$PROJECT_DIR$/src/Resume.java" afterPath="$PROJECT_DIR$/src/Resume.java" />
       <change beforePath="$PROJECT_DIR$/src/RoboResume.java" afterPath="$PROJECT_DIR$/src/RoboResume.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +21,8 @@
       <file leaf-file-name="RoboResume.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RoboResume.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1001">
-              <caret line="249" column="20" lean-forward="true" selection-start-line="249" selection-start-column="20" selection-end-line="249" selection-end-column="20" />
+            <state relative-caret-position="78">
+              <caret line="851" column="21" lean-forward="true" selection-start-line="851" selection-start-column="21" selection-end-line="851" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +33,7 @@
       <file leaf-file-name="Resume.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Resume.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
+            <state relative-caret-position="790">
               <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
                 <element signature="e#567#568#0" expanded="true" />
@@ -173,6 +165,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setEdlist</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -379,12 +376,12 @@
       <option name="presentableId" value="Default" />
       <updated>1562001141752</updated>
       <workItem from="1562001147587" duration="13123000" />
-      <workItem from="1562072573721" duration="12451000" />
+      <workItem from="1562072573721" duration="15353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25574000" />
+    <option name="totallyTimeSpent" value="28476000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,7 +394,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -408,7 +404,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -661,7 +657,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Resume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
+        <state relative-caret-position="790">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
             <element signature="e#567#568#0" expanded="true" />
@@ -686,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RoboResume.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1001">
-          <caret line="249" column="20" lean-forward="true" selection-start-line="249" selection-start-column="20" selection-end-line="249" selection-end-column="20" />
+        <state relative-caret-position="78">
+          <caret line="851" column="21" lean-forward="true" selection-start-line="851" selection-start-column="21" selection-end-line="851" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
